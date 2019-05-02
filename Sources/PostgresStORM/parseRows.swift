@@ -55,7 +55,7 @@ extension PostgresStORM {
 //					// will create an XML object
 //					params[result.fieldName(index: f)!] = XDocument(fromSource: result.getFieldString(tupleIndex: x, fieldIndex: f)!)
 				case "float":
-					params[result.fieldName(index: f)!] = result.getFieldFloat(tupleIndex: x, fieldIndex: f)
+					params[result.fieldName(index: f)!] = result.getFieldDouble(tupleIndex: x, fieldIndex: f)
 
 				case "date":
 					let output = result.getFieldString(tupleIndex: x, fieldIndex: f)
