@@ -65,7 +65,7 @@ open class PostgresStORM: StORM, StORMProtocol {
 		thisConnection.open()
 		if thisConnection.state == .bad {
 			error = .connectionError
-			throw StORMError.error("Connection Error")
+			throw StORMError.connectionError
 		}
 		thisConnection.statement = statement
 
