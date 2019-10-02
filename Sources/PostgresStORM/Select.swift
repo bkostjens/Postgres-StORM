@@ -146,7 +146,7 @@ extension PostgresStORM {
 			//return results
 		} catch {
 			LogFile.error("Error msg: \(error)", logFile: "./StORMlog.txt")
-			self.error = StORMError.error("\(error)")
+			//self.error = error
 			throw error
 		}
 	}
