@@ -24,7 +24,7 @@ extension PostgresStORM {
 				cursor: cursor
 			)
 		} catch {
-			throw StORMError.error("\(error)")
+			throw error
 		}
 	}
 
@@ -41,7 +41,7 @@ extension PostgresStORM {
 			)
 			makeRow()
 		} catch {
-			throw StORMError.error("\(error)")
+			throw error
 		}
 	}
 
@@ -64,7 +64,7 @@ extension PostgresStORM {
 		do {
 			try select(columns: [], whereclause: whereclause, params: params, orderby: orderby, cursor: cursor, joins: joins, having: having, groupBy: groupBy)
 		} catch {
-			throw StORMError.error("\(error)")
+			throw error
 		}
 	}
 
