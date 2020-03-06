@@ -9,7 +9,7 @@ let package = Package(
 	],
 	dependencies: [
 		.package(url: "https://github.com/PerfectlySoft/Perfect-PostgreSQL.git", from: "3.0.0"),
-		.package(url: "https://github.com/bkostjens/StORM.git", from: "3.0.0"),
+		.package(url: "https://github.com/bkostjens/StORM.git", .branch("master")),
 		.package(url: "https://github.com/PerfectlySoft/Perfect-Logger.git", from: "3.0.0"),
 	],
 	targets: [
